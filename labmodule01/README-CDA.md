@@ -40,3 +40,5 @@ test case below (e.g. SensorSimAdapterManagerTest, DeviceDataManagerTest, etc.)
 - 
 
 EOF.
+
+si
