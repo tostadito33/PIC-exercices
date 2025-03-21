@@ -10,7 +10,13 @@ NOTE: Include two full paragraphs describing your implementation approach by ans
 
 What does your implementation do? 
 
+Mi implementación permite la simulación y prueba de un sistema IoT sin necesidad de hardware físico, utilizando el emulador Sense HAT. Se conecta con módulos previos para emular sensores de temperatura, humedad y presión, así como actuadores como sistemas HVAC y humidificadores. Además, la matriz de LED del emulador se emplea para visualizar mensajes y estados del sistema, facilitando la validación y prueba del comportamiento del sistema en un entorno controlado.
+
+
 How does your implementation work?
+
+La implementación se basa en la interacción entre la CDA y el emulador Sense HAT. Se crean emuladores para sensores y actuadores, los cuales heredan de clases base y sobreescriben métodos para generar datos simulados. Los sensores proporcionan datos en tiempo real que son gestionados por el SensorAdapterManager, mientras que los actuadores, controlados por el ActuatorAdapterManager, responden a comandos para modificar el entorno simulado. La pantalla LED del emulador también se actualiza para reflejar las acciones realizadas.
+
 
 ### Code Repository and Branch
 
