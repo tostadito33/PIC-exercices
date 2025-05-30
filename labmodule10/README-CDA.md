@@ -42,3 +42,6 @@ test case below (e.g. SensorSimAdapterManagerTest, DeviceDataManagerTest, etc.)
 - 
 
 EOF.
+![image](https://github.com/user-attachments/assets/8566070d-809a-4e8e-a9cc-737b0eb2c9dd)
+![image](https://github.com/user-attachments/assets/e6e55b28-3769-4fbd-95f3-1d28aa797492)
+
