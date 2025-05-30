@@ -9,14 +9,15 @@ Be sure to implement all the PIOT-CDA-* issues (requirements) listed.
 NOTE: Include two full paragraphs describing your implementation approach by answering the questions listed below.
 
 What does your implementation do? 
+Mi implementación permite al CDA comunicarse de forma segura con el GDA utilizando MQTT con cifrado TLS. Está diseñada para enviar datos de sensores, rendimiento del sistema y estado de actuadores, así como para recibir comandos remotos del GDA que controlan dispositivos como el humidificador. Además, se implementa lógica local que analiza los datos de temperatura para activar automáticamente el sistema HVAC cuando sea necesario, sin depender de una instrucción remota.
 
 How does your implementation work?
-
+La implementación utiliza la función tls_set de la librería Paho MQTT para establecer una conexión segura mediante certificados generados con OpenSSL. Al recibir datos desde el GDA, el cliente MQTT del CDA los entrega al DeviceDataManager, que los convierte en objetos ActuatorData. A partir de ahí, el ActuatorDataManager actualiza el estado del humidificador según las instrucciones. Paralelamente, se ha integrado lógica de procesamiento local que activa el sistema HVAC automáticamente si la temperatura supera un umbral configurado, lo cual mejora la autonomía del CDA.
 ### Code Repository and Branch
 
 NOTE: Be sure to include the branch.
 
-URL: 
+URL: https://github.com/tostadito33/python-components/tree/P10
 
 
 ### Unit Tests Executed
