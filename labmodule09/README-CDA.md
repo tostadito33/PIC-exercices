@@ -97,3 +97,4 @@ test case below (e.g. SensorSimAdapterManagerTest, DeviceDataManagerTest, etc.)
 
 
 EOF.
+![image](https://github.com/user-attachments/assets/c58a3348-840c-43d7-a0c3-778dace1a638)
